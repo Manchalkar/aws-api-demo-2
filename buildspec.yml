@@ -1,3 +1,5 @@
+  
+
 version: 0.2
 phases:
   install:
@@ -10,7 +12,7 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - dotnet publish -c Release  ./build_output Etools/Etools.WebApi.csproj  --self-contained false
+      - dotnet publish -c release --self-contained false -r linux-x64 -o ./build_output Etools/Etools.WebApi.csproj
 artifacts:
   files:
     - ./**/*
