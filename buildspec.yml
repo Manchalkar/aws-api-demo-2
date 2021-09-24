@@ -17,3 +17,4 @@ artifacts:
   files:
     - ./**/*
     - appspec.yml
+  base-directory: './build_output'
