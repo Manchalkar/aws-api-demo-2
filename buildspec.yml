@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Build started on `date`
       - dotnet publish -c release --self-contained false -r linux-x64 -o ./build_output Etools/Etools.WebApi.csproj
-      - mv appspec.yml ./build_ouput
+      - mv appspec.yml ./build_output
 artifacts:
   files:
     - ./**/*
