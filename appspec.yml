@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: Etools/build_output
+  - source: /
     destination: /home/ubuntu/aspnetcoreapp
   - source: scripts/virtualhost.conf
     destination: /home/ubuntu/aspnetcoreapp
